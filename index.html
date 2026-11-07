@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>Akshat Budhori | Programmer, Artist, Cyber Security Enthusiast</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Unbounded:wght@500;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="boot" role="presentation"><div id="bootlog"></div><p class="skip">[ click to skip ]</p></div>
+<canvas id="rain" aria-hidden="true"></canvas>
+<div id="glow" aria-hidden="true"></div>
+<header class="nav">
+  <a class="logo" href="#hero">akshat@budhori:~</a>
+  <nav aria-label="Primary">
+    <a href="#about">about</a><a href="#projects">projects</a><a href="#art">art</a><a href="#contact">contact</a>
+  </nav>
+</header>
+<main>
+<section id="hero">
+  <p class="cmd">whoami</p>
+  <h1 class="glitch" data-text="Akshat Budhori">Akshat Budhori</h1>
+  <div class="roles" aria-label="Programmer, Artist, Cyber Security Enthusiast"><span id="typed"></span><span class="caret"></span></div>
+  <p class="meta">I write code and I draw. Currently learning <b>cyber security</b>.</p>
+  <div class="btns">
+    <a class="btn" href="#projects">./view_projects</a>
+    <a class="btn alt" href="#contact">./open_channel</a>
+  </div>
+</section>
+<section id="about">
+  <p class="cmd reveal">cat about.txt</p>
+  <h2 class="reveal">Two brains, one machine.</h2>
+  <div class="split">
+    <article class="proc logic reveal">
+      <h3>process: logic.sys</h3>
+      <p>I like understanding how things work down to the bytes: databases, computer vision, game loops. I’m also learning cyber security. It’s early days, but I’m enjoying how it changes the way I look at my own code.</p>
+      <div class="bar"><i style="--w:88%;background:var(--green)"></i></div>
+      <small>Programming &middot; Game dev &middot; Computer vision &middot; Learning: cyber security</small>
+    </article>
+    <article class="proc art reveal">
+      <h3>process: canvas.exe</h3>
+      <p>Outside the terminal I draw. Art is where I get to break rules instead of exploit them. It shapes how I design games, interfaces, and anything people actually have to look at.</p>
+      <div class="bar"><i style="--w:80%;background:var(--purple)"></i></div>
+      <small>Illustration &middot; Character &amp; concept work &middot; Visual design</small>
+    </article>
+  </div>
+</section>
+<section id="projects">
+  <p class="cmd reveal">ls -la ./projects</p>
+  <h2 class="reveal">Datablocks</h2>
+  <div class="blocks">
+    
+    <article class="block reveal tilt">
+      <div class="bhead"><span>FILE: fuelkrieg.apk</span><span class="st">STATUS: LIVE</span></div>
+      <div class="bbody">
+        <div>
+          <h3>Fuelkrieg</h3>
+          <p>A game built and submitted for BYOG 2026. Playable right now on mobile and desktop.</p>
+          <div class="tags"><span>Game dev</span><span>BYOG 2026</span><span>Android</span></div>
+          <div class="links">
+            <a href="https://play.google.com/store/apps/details?id=com.pixel3d.fuelkrieg&amp;hl=en_US&amp;pli=1" target="_blank" rel="noopener">Google Play Store</a>
+            <a href="https://vntg.itch.io/fuelkrieg" target="_blank" rel="noopener">Itch.io</a>
+          </div>
+        </div>
+<pre class="log"><em>$</em> ./fuelkrieg --build release
+[ok] assets packed
+[ok] submitted: <u>BYOG 2026</u>
+[ok] deployed: play_store, itch.io
+<em>$</em> _</pre>
+      </div>
+    </article>
+    
+    <article class="block reveal tilt">
+      <div class="bhead"><span>FILE: finger_beats.py</span><span class="st">STATUS: RUNNING</span></div>
+      <div class="bbody">
+        <div>
+          <h3>Finger Beats</h3>
+          <p>Computer vision that tracks your hand gestures in real time and turns them into music. Wave a hand, drop a beat.</p>
+          <div class="tags"><span>Python</span><span>OpenCV</span><span>MediaPipe</span><span>Real-time CV</span></div>
+          <div class="links"><a href="https://github.com/Akshat-6907" target="_blank" rel="noopener">View on GitHub</a></div>
+        </div>
+<pre class="log"><em>$</em> python finger_beats.py
+[cam] stream open 30fps
+[mp ] 21 landmarks / hand
+[gesture] index_up -> <u>kick</u>
+[gesture] fist     -> <u>snare</u>
+<em>$</em> _</pre>
+      </div>
+    </article>
+    
+    <article class="block reveal tilt">
+      <div class="bhead"><span>FILE: memdb.core</span><span class="st wip">STATUS: HACKING</span></div>
+      <div class="bbody">
+        <div>
+          <h3>In-Memory Database</h3>
+          <p>A database I built from scratch that keeps everything in RAM. Made to learn how storage, lookups and commands really work under the hood.</p>
+          <div class="tags"><span>Data structures</span><span>Systems</span><span>Custom engine</span></div>
+          <div class="links"><a href="https://github.com/Akshat-6907" target="_blank" rel="noopener">View on GitHub</a></div>
+        </div>
+<pre class="log"><em>memdb&gt;</em> SET user:1 "akshat"
+OK
+<em>memdb&gt;</em> GET user:1
+<u>"akshat"</u>
+<em>memdb&gt;</em> _</pre>
+      </div>
+    </article>
+  </div>
+</section>
+<section id="art">
+  <p class="cmd reveal">decrypt ./art_archive --key=@akshatcantdraw</p>
+  <h2 class="reveal">Classified image archive</h2>
+  <div class="archive">
+    <div class="ph"><span class="tag">IMG_001</span><img src="img1.jpg" alt="Pencil sketch of an armored knight" loading="lazy"></div>
+    <div class="ph"><span class="tag">IMG_002</span><img src="img2.jpg" alt="Bold red, yellow and blue Spider-Man mask illustration" loading="lazy"></div>
+    <div class="ph"><span class="tag">IMG_003</span><img src="img3.jpg" alt="Koi fish swimming among lily pads" loading="lazy"></div>
+    <div class="ph"><span class="tag">IMG_004</span><img src="img4.jpg" alt="Spider-Man in a dark suit on a purple background" loading="lazy"></div>
+    <div class="ph"><span class="tag">IMG_005</span><img src="img5.jpg" alt="Ink drawing of a footballer next to a ball" loading="lazy"></div>
+    <div class="ph"><span class="tag">IMG_006</span><img src="img6.jpg" alt="Ink drawing of Chainsaw Man" loading="lazy"></div>
+  </div>
+  <p class="note reveal">New pieces land on Instagram first: <a href="https://www.instagram.com/akshatcantdraw/" target="_blank" rel="noopener">@akshatcantdraw</a></p>
+</section>
+<section id="contact">
+  <p class="cmd reveal">ssh guest@akshat --secure</p>
+  <h2 class="reveal">Secure comms</h2>
+  <div class="chan reveal">
+    <div class="bhead"><span>CHANNEL: AES-256 // E2E</span><span id="chanst">HANDSHAKE...</span></div>
+    <pre class="hs" id="hs"></pre>
+    <div class="nodes" id="nodes">
+      <a class="node li" href="https://www.linkedin.com/in/akshat-budhori-619780428/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9.75h4v11H3zM9.5 9.75h3.8v1.5h.05c.53-1 1.83-1.85 3.77-1.85 4.03 0 4.78 2.55 4.78 5.88v5.47h-4v-4.85c0-1.16-.02-2.65-1.7-2.65-1.7 0-1.96 1.26-1.96 2.57v4.93h-4z"/></svg>
+        <div>LinkedIn<span>professional node</span></div><b>&gt;&gt;</b></a>
+      <a class="node gh" href="https://github.com/Akshat-6907" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.9.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 015 0c1.9-1.29 2.74-1.02 2.74-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0012 2z"/></svg>
+        <div>GitHub<span>source code repository</span></div><b>&gt;&gt;</b></a>
+      <a class="node ig" href="https://www.instagram.com/akshatcantdraw/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3zm5 3.5A4.5 4.5 0 1112 16.5a4.5 4.5 0 010-9zm0 2A2.5 2.5 0 1012 14.5a2.5 2.5 0 000-5zM17.2 6a1.1 1.1 0 110 2.2 1.1 1.1 0 010-2.2z"/></svg>
+        <div>Instagram<span>art feed: @akshatcantdraw</span></div><b>&gt;&gt;</b></a>
+    </div>
+  </div>
+</section>
+</main>
+<footer>&copy; 2026 Akshat Budhori. Built by hand. No frameworks were harmed.</footer>
+<script src="script.js"></script>
+</body>
+</html>
